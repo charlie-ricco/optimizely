@@ -1,0 +1,11 @@
+// Remove Play:3 on Main Shop page: http://www.sonos.com/shop
+$(".main > div:eq(0) > div:eq(0) > div:eq(2)").css({"display":"none", "visibility":""});
+
+// Remove Play:3 on Wireless Speakers page: http://www.sonos.com/products/wireless-speakers
+$("div.play-3").css({"display":"none", "visibility":""});
+$("div.play-5-gen2").css({"left":"0px", "position":"relative", "top":"0px"});
+$("div.play-5-gen2").detach().insertAfter("div.play-1");
+$(".main > section:eq(0) > div:eq(0) > div:eq(0) > p:eq(0)").html("\n                Choose the PLAY:1 with deep bass and crystal clear sound, or upgrade to the PLAY:5 with deeper, richer and more powerful sound. \n            ");
+
+// Remove Play:3 on Compare Wireless Speakers page: http://www.sonos.com/products/wireless-speakers/compare
+$(".section--whitespace--vertical > div:eq(2)").css({"display":"none", "visibility":""});
